@@ -7,6 +7,10 @@ function exercise8() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let sum = 0;
+  for(let num = 0; num <= (5000/4); num++){
+    sum += (num * 4)
+  }
 
   console.log(`The sum is ${sum}`);
   // -----------------------------------------------------------------

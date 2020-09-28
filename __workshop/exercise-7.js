@@ -23,6 +23,21 @@ function exercise7() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+    for(let hr = 0; hr <= 23; hr++){
+      let sleepTime = [22,23,0,1,2,3,4,5];
+      let eatTime = [6,12,18];
+      let result = "";
+      if(sleepTime.includes(hr)){
+        result += `It's ${hr}h. Time to sleep!`;
+        console.log(result);
+      } else if(eatTime.includes(hr)){
+        result += `It's ${hr}h. Time to eat!`;
+        console.log(result);
+      } else{
+        result += `It's ${hr}h. Time to train!`;
+        console.log(result);
+      }
+    }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

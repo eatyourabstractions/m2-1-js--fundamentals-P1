@@ -20,6 +20,18 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  const fibSeq = function(nfib){
+    let start = 0;
+    let next = 1;
+    let fib = 0;
+    for(let idx = 1; idx <= nfib; idx++){
+      fib = start + next;
+      start = next;
+      next = fib;
+    }
+    return fib
+  }
+  console.log(fibSeq(48));
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

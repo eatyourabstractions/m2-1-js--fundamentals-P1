@@ -15,6 +15,31 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+const row = function(everOrOdd) {
+  let line = "";
+  let arr = [0,1,2,3,4,5,6,7];
+    for(n in arr){
+      if(n  % 2 === everOrOdd){
+        line += "#";
+      } else {line += "_" ;}
+    }
+    return line
+  }
+  const grid = function(height){
+    let board = "";
+    let idx = 0
+    for(col = 0; col < height; col++){
+      if(idx === 0){
+        board += `${row(0)},`;
+        idx = 1;
+      } else {
+        board += `${row(1)},`;
+        idx = 0;
+      }
+    }
+    return board.slice(0, board.length - 1);
+  }
+  console.log(grid(8));
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

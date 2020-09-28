@@ -13,6 +13,15 @@ function exercise10() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let result = "";
+    for(let times = 1; times <= 7; times++){
+      let token = "#";
+        for(let base = 1; base <= times; base++){
+          result += token;
+        }
+        result += ",";
+    }
+    console.log(result.slice(0, result.length - 1));
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

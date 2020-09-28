@@ -16,7 +16,20 @@ function exercise12() {
   // EXPECTED OUTPUT: [2, 3, 5, 7, 11, 13, ...]
   //
   // Write code between the lines (below)
+  let primes = [2];
   // -----------------------------------------------------------------
+  function isPrime(num) {
+    for (let i = 2; i * i <= num; i++)
+        if (num % i === 0)
+          return false; 
+    return num > 1;
+}
+    for(let prospect = 3; prospect <= 200; prospect++){
+      if(isPrime(prospect)){
+        primes.push(prospect)
+      }
+    }
+    console.log(primes)
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
