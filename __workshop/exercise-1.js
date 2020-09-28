@@ -36,9 +36,9 @@ function question3() {
   // Which of the following expressions are truthy?
 
   console.log("3.1. (x)"); /* !0         */
-  console.log("3.2. (x)"); /* !1         */
-  console.log("3.3. ( )"); /* -1         */
-  console.log("3.4. (x)"); /* !"hello!"  */
+  console.log("3.2. ( )"); /* !1         */
+  console.log("3.3. (x)"); /* -1         */
+  console.log("3.4. ( )"); /* !"hello!"  */
   console.log("3.5. ( )"); /* null       */
   console.log("3.6. (x)"); /* !undefined */
   console.log("3.7. (x)"); /* !NaN       */
@@ -68,7 +68,7 @@ function question5() {
   console.log("5.2. Number of elements (4)", ["array", "number", "string", "boolean"]);
 
   // 5.3. []
-  console.log("5.3. Number of elements (1)", ["array"]);
+  console.log("5.3. Number of elements (0)", []);
 
   // 5.4. [['romeo', 'juliet'], false]
   console.log("5.4. Number of elements (2)", ["array", "boolean"]);
@@ -86,13 +86,13 @@ function question6() {
   console.log("6.1.", "string", "bob");
 
   // 6.2. let age = 45;
-  console.log("6.2.", "number", "45");
+  console.log("6.2.", "number", 45);
 
   // 6.3. let isMarried = false;
-  console.log("6.3.", "boolean", "false");
+  console.log("6.3.", "boolean", false);
 
   // 6.4. let kids = [{name: 'Morty', age: 3}, {name: 'Summer', age: 7}]
-  console.log("6.4.", "array", "[{name: 'Morty', age: 3}, {name: 'Summer', age: 7}]");
+  console.log("6.4.", "array", [{name: 'Morty', age: 3}, {name: 'Summer', age: 7}]);
 }
 
 // Once you are done type the following in the terminal to test your answer(s).
